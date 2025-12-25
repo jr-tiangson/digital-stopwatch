@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4ba748;
+}
+
+.container{
+    user-select: none;
+    background-color: #ecf3ec;
+    padding: 25px;
+    border-radius: 45px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+    5px 5px 12px rgba(0, 0, 0, .16);
+
+}
+
+.container .time{
+    height: 100px;
+    background: #dff1df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                inset  5px 5px 12px rgba(0, 0, 0, .16);
+    padding: 0 10px;
+}
+
+.container .time span{
+    width: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: rgba(70, 70, 70);
+}
+
+.time span.colon{
+    width: 10px;
+}
+
+.time span.ms-colon,
+.time span.millisecond{
+    color: #4ba748;
+}
+
+.container .buttons{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button{
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    color: #4ba748;
+    background: #ffffff;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+}
+
+.buttons button.start{
+    background-color: #54b851;
+    color: #ffffff;
+}
+
+.buttons button.reset{
+    background-color: #92c091;
+    color: #ffffff;
+}
+
+.buttons button.active,
+.buttons button.stopActive{
+    cursor: not-allowed;
+    opacity: 0.8;
+}
